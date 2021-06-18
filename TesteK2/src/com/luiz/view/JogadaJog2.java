@@ -10,6 +10,7 @@ import com.luiz.model.Jogada;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -99,6 +100,7 @@ public class JogadaJog2 extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void pedraBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pedraBtnActionPerformed
@@ -159,6 +161,19 @@ public class JogadaJog2 extends javax.swing.JFrame {
        }else if(JogadaJog1.jogada1 == 2 && jogada2 == 2){
            jogo.setVencedorJogada(0);
            jogaDAO.adicionaVencedorJogada(jogo);
+       }
+       this.dispose();
+       Home inicio = new Home();
+       inicio.setVisible(true);
+       if(jogo.getVencedorJogada()==1){
+       String mensagemVitoria = "Jogador 1 foi o vencedor!";
+           JOptionPane.showMessageDialog(null, mensagemVitoria);
+       }else if(jogo.getVencedorJogada()==2){
+            String mensagemVitoria = "Jogador 2 foi o vencedor!";
+           JOptionPane.showMessageDialog(null, mensagemVitoria);
+       }else if(jogo.getVencedorJogada()==0){
+        String mensagemVitoria = "EMPATE!";
+           JOptionPane.showMessageDialog(null, mensagemVitoria);
        }
        
    }
