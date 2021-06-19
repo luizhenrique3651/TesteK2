@@ -70,6 +70,7 @@ public class HistoricoPartidas extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Historico de partidas");
+        setResizable(false);
 
         tableHistorico.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

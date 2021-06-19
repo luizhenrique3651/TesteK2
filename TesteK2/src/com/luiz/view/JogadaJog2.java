@@ -42,6 +42,7 @@ public class JogadaJog2 extends javax.swing.JFrame {
         tesouraBtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jLabel1.setFont(new java.awt.Font("Ubuntu", 0, 48)); // NOI18N
         jLabel1.setForeground(java.awt.Color.red);
