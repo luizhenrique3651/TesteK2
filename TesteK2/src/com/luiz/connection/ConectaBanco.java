@@ -28,11 +28,11 @@ public class ConectaBanco {
            conexao = DriverManager.getConnection(url, user, password);
            return conexao;
        } catch (Exception e) {
-           String mensagemErro = "Caro usuário, houve um erro na execução da"
+           String mensagemErro = "ATENÇÃO! \n Certifique-se que os campos de usuario e senha do banco "
+                   + " no pacote 'connection' estão corretamente preenchidos. \nCaro usuário, houve um erro na execução da"
                    + " ferramenta, copie e cole o codigo abaixo e mande para o"
                    + " desenvolvedor. \n \n" +e+ " \n \n email do desenvolvedor:"
                    + " uizhenrique@gmail.com"; 
-           
            JOptionPane.showMessageDialog(null, mensagemErro);
 
            return null;
