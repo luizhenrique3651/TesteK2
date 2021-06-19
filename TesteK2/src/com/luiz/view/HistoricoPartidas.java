@@ -82,6 +82,7 @@ public class HistoricoPartidas extends javax.swing.JFrame {
                 "Vencedor da partida"
             }
         ));
+        tableHistorico.setEnabled(false);
         jScrollPane1.setViewportView(tableHistorico);
 
         lblVitJogador1.setFont(new java.awt.Font("Dialog", 0, 14)); // NOI18N
